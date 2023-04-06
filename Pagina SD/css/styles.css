@@ -11514,3 +11514,13 @@ html {
   background-color: violet;
   border-color: var(--bs-pink);
 }
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand img {
+  max-width: 100px;
+  margin-right: 10px;
+}
