@@ -11508,3 +11508,9 @@ html {
 .copyright {
   background-color: #E175C7;
 }
+.btn-primary {
+  margin-top: 2%;
+  color: var(--bs-pink)
+  background-color: violet;
+  border-color: var(--bs-pink);
+}
