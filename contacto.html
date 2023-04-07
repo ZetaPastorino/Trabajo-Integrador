@@ -8,7 +8,7 @@
     <meta name="author" content="" />
     <title>SD Studio Dance</title>
     <!-- Favicon-->
-    <link rel="icon" type="image/x-icon" href="assets/logoSD-Recuperado.png" />
+    <link rel="icon" type="image/x-icon" href="assets/img/SD/logoSD-Recuperado.png" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
@@ -23,8 +23,8 @@
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand" href="../Pagina SD/index.html">
-                <img src="../assets/SD/Logo completo Oro.png" alt="logo">
+            <a class="navbar-brand" href="Pagina SD/index.html">
+                <img src="assets/img/SD/Logo completo Oro.png" alt="logo">
                 SD Studio Dance
             </a>
             <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button"
@@ -36,13 +36,13 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="../Pagina SD/profes.html">Profes</a></li>
+                            href="../profes.html">Profes</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="../Pagina SD/nosotros.html"> Nosotros</a></li>
+                            href="../nosotros.html"> Nosotros</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="../Pagina SD/horarios.html">Horarios</a></li>
+                            href="../horarios.html">Horarios</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded"
-                            href="../Pagina SD/contacto.html">Contacto</a></li>
+                            href="../contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </div>
@@ -51,7 +51,7 @@
     <header class="masthead bg-primary text-white text-center">
         <div class="container d-flex align-items-center flex-column">
             <!-- Masthead Avatar Image-->
-            <img class="masthead-avatar mb-5" src="assets/SD/banner.jpg.png" alt="..." />
+            <img class="masthead-avatar mb-5" src="assets/img/SD/banner.jpg.png" alt="..." />
             <!-- Masthead Heading-->
             <h1 class="masthead-heading text-uppercase mb-0">SD Studio Dance</h1>
             <!-- Icon Divider-->
@@ -63,17 +63,6 @@
             <!-- Masthead Subheading-->
         </div>
     </header>
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- Contact Section-->
     <section class="page-section" id="contacto">
@@ -89,9 +78,43 @@
             <!-- Contact Section Form-->
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-7">
-                    <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSdpZStllSH2lUrEH9nYrxL4lmE6A3WXgmJTSYItBYscVN6qzg/viewform?embedded=true"
-                        width="700" height="800" frameborder="0" marginheight="10" marginwidth="0">Cargando…</iframe>
+        <form>
+    <div class="form-group">
+        <label for="form-email">Dirección de email</label>
+        <input type="email" class="form-control" id="form-email" placeholder="nombre@mail.com">
+    </div>
+    <div class="form-group">
+        <label for="form-rank">Contános sobre vos!</label>
+        <select class="form-control" id="form-rank">
+        <option>Soy nuevx en danza</option>
+        <option>Soy principiante, quiero aprender más!</option>
+        <option>Tengo experiencia, pero quiero mejorar!</option>
+        <option>Busco instructorxs personales para clases personalizadas!</option>
+        <option>Soy profesional y quiero enviar mi CV!</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="form-ref">Cómo escuchaste de nosotrxs?</label>
+        <select multiple class="form-control" id="form-ref">
+        <option>unx amigx</option>
+        <option>un anuncio físico (flyer/poster/panfleto) </option>)
+        <option>un Anuncio Online (Facebook/Instagram/TikTok)</option>)
+        <option>unx instructorx </option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="form-msg">Contanos sobre tu razón para contactarnos!</label>
+        <textarea class="form-control" id="form-msg" rows="3"></textarea>
+    </div>
+    <button type="menu" class="btn btn-primary" onclick="Swal.fire({
+title: 'Gracias!',
+text: 'Nos contactaremos a la brevedad!',
+imageUrl: 'assets/img/SD/logoSD-Recuperado.png',
+imageWidth: 100,
+timer: 4000,
+imageAlt: 'Custom image',
+});Login(); return false">Enviar</button>
+    </form>
                 </div>
             </div>
         </div>
@@ -156,6 +179,9 @@
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    <!-- Sweet Alert 2-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/formulario.js"></script>
 </body>
 
 </html>
