@@ -67,73 +67,44 @@
         <!--FORMULARIO-->
 
 
-              <!-- Contact Section-->
-              
-              <section class="page-section" id="contact">
-                <div class="container">
-                    <!-- Contact Section Heading-->
-                    <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contactanos</h2>
-                    <!-- Icon Divider-->
-                    <div class="divider-custom">
-                        <div class="divider-custom-line"></div>
-                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                        <div class="divider-custom-line"></div>
-                    </div>
-                    <!-- Contact Section Form-->
-                    <div class="row justify-content-center">
-                        <div class="col-lg-8 col-xl-7">
-                        
-                            <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="procesar_formulario.php" method="POST">
-                                <!-- Name input-->
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="name" type="text" placeholder="Ingrese su nombre..." data-sb-validations="required" />
-                                    <label for="name">Nombre</label>
-                                    <div class="invalid-feedback" data-sb-feedback="name:required">Se requiere un nombre.</div>
-                                </div>
-                                <!-- Email address input-->
-                                <div class="form-floating mb-3">
-                                    <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                    <label for="email">Email </label>
-                                    <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                    <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                                </div>
-
-                                 <!-- Subject-->
-                                 <div class="form-floating mb-3">
-                                    <input class="form-control" id="name" type="text" placeholder="Asunto..." data-sb-validations="required" />
-                                    <label for="name">Asunto </label>
-                                    <div class="invalid-feedback" data-sb-feedback="name:required">Se requiere un nombre.</div>
-                                </div>
-                               
-                                <!-- Message input-->
-                                <div class="form-floating mb-3">
-                                    <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                    <label for="message">Mensaje</label>
-                                    <div class="invalid-feedback" data-sb-feedback="message:required">Se requiere un mensaje.</div>
-                                </div>
-                                <!-- Submit success message-->
-                                <!---->
-                                <!-- This is what your users will see when the form-->
-                                <!-- has successfully submitted-->
-                                <div class="d-none" id="submitSuccessMessage">
-                                    <div class="text-center mb-3">
-                                        <div class="fw-bolder">Su mensaje ha sido enviado correctamente!</div>
-                            
-                                    </div>
-                                </div>
-                                <!-- Submit error message-->
-                                <!---->
-                                <!-- This is what your users will see when there is-->
-                                <!-- an error submitting the form-->
-                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error!</div></div>
-                                <!-- Submit Button-->
-                                <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit" >Enviar</button>
-                            </form>
-                        </div>
-                    </div>
+        
+        <section class="page-section" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contactanos</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
                 </div>
-            </section>
-            
+                
+                <form action="https://formsubmit.co/proyectos.web.mj@gmail.com" method="POST">
+                    <div class="input-group">
+                    
+                        <label for="name">Nombre</label>
+                        <input type="text" name="name" id="name" placeholder="Nombre">
+
+                        <label for="name">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Email">
+
+                        <label for="name">Mensaje</label>
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Mensaje"></textarea>
+
+                       <div class="form-txt">
+                        <a href="#">Politica de privacidad</a>
+                        <a href="#">Terminos y condiciones</a>
+                       </div>
+
+                       <input class="btn" type="submit" value="Enviar">
+                       <input type="hidden" name="_captcha" value="false">
+
+                    </div>
+        </form>
+
+
+
+        
  
     <!-- Footer-->
     <footer class="footer text-center">
