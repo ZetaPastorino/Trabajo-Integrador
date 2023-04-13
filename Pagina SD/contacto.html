@@ -68,7 +68,7 @@
 
 
               <!-- Contact Section-->
-              <form action="https://formsubmit.co/illanes.mariajose@gmail.com" method="POST">
+              
               <section class="page-section" id="contact">
                 <div class="container">
                     <!-- Contact Section Heading-->
@@ -83,7 +83,7 @@
                     <div class="row justify-content-center">
                         <div class="col-lg-8 col-xl-7">
                         
-                            <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="procesar_formulario.php" method="POST">
                                 <!-- Name input-->
                                 <div class="form-floating mb-3">
                                     <input class="form-control" id="name" type="text" placeholder="Ingrese su nombre..." data-sb-validations="required" />
@@ -127,13 +127,13 @@
                                 <!-- an error submitting the form-->
                                 <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error!</div></div>
                                 <!-- Submit Button-->
-                                <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Enviar</button>
+                                <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit" >Enviar</button>
                             </form>
                         </div>
                     </div>
                 </div>
             </section>
-              </form>
+            
  
     <!-- Footer-->
     <footer class="footer text-center">
@@ -168,17 +168,7 @@
                     <a class="btn btn-outline-light btn-social mx-1"
                         href="https://api.whatsapp.com/send?phone=5491161809216" target="_blank"><i class="fab fa-whatsapp"></i></a>
                 </div>
-                <!-- Footer About Text-->
 
-                <!--<div class="col-lg-4">
-                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
-                        <p class="lead mb-0">
-                            Freelance is a free to use, MIT licensed Bootstrap theme created by
-                            <a href="http://startbootstrap.com">Start Bootstrap</a>
-                            .
-                        </p>
-                    </div>
-                -->
             </div>
         </div>
     </footer>
