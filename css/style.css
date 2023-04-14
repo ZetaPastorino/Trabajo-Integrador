@@ -11443,7 +11443,8 @@ html {
   font-size: 1.25rem;
 }
 .masthead .masthead-avatar {
-  width: 120.7%;
+  width: 100%;
+
 }
 
 @media (min-width: 992px) {
@@ -11504,6 +11505,7 @@ html {
   padding-bottom: 5rem;
   background-color: #E175C7;
   color: #fff;
+ 
 }
 
 .copyright {
